@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div>
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+            <div class="container-fluid">
+              <h2 style="padding-right: 5%;">Dealerships</h2>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+                      </li>
+                      
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    <!--Hero Section-->
+    <div style="
+        background-image: url('/static/lexus.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: white;
+    ">
+
+    <!--Contact Info + Form Card-->
+    <div class="card" style="
+        width: 35%;
+        margin-right: 10%;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 32px;
+        border: none;
+        border-radius: 12px;
+
+    ">
+
+    <h2 style="color: darkturquoise; text-align: center; margin-bottom: 20px;">Get in Touch</h2>
+    <p style="text-align: center;">We’re here to help. Reach out to us through any of the following methods or send us a message below.</p>
+
+      <hr style="border-color: darkturquoise;">
+
+      <!--Contact Form-->
+      <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+            <label for="name" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+        </div>
+
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Type your message here"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; background-color: darkturquoise; border: none;">
+            Send Message </button>
+        
+        </form>
+
+    </div>
+    </div>
+ <!-- Horizontal Contact Info -->
+ <div class="row text-center" style="justify-content: center;">
+
+    <div class="col-md-2 col-sm-4 mb-4">
+      <h5 style="color: darkturquoise;">Contact Customer Service</h5>
+      <p>support@bestcars.com</p>
+    </div>
+
+    <div class="col-md-2 col-sm-4 mb-4">
+      <h5 style="color: darkturquoise;">National Advertising Team</h5>
+      <p>NationalSales@bestcars.com</p>
+    </div>
+
+    <div class="col-md-2 col-sm-4 mb-4">
+      <h5 style="color: darkturquoise;">Public Relations Team</h5>
+      <p>PR@bestcars.com</p>
+    </div>
+
+    <div class="col-md-2 col-sm-4 mb-4">
+      <h5 style="color: darkturquoise;">BestCars.com Offices</h5>
+      <p>312-611-1111</p>
+    </div>
+
+    <div class="col-md-2 col-sm-4 mb-4">
+      <h5 style="color: darkturquoise;">Become a Dealer</h5>
+      <p><a href="https://growwithbestcars.com" style="text-decoration: none; color: blue;">growwithbestcars.com</a></p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
