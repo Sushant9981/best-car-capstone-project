@@ -21,9 +21,24 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-        path('contact/', TemplateView.as_view(template_name="Contact.html")),
+
+    # Static page
+    path('contact/', TemplateView.as_view(template_name="Contact.html")),
     path('about/', TemplateView.as_view(template_name="About.html")),
+
+    # React Login Page Route
+    path('login/', TemplateView.as_view(template_name="index.html")),
+
+    # Django App URLs
     path('djangoapp/', include('djangoapp.urls')),
+
+    # Default Home Page
     path('', TemplateView.as_view(template_name="Home.html")),
+
+    # Register URL
+    path('register/', TemplateView.as_view(template_name="index.html")),
+
+
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
